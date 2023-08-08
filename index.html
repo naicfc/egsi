@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/images/egsi-icon.png" />
+    <title>EGSI - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+  </head>
+
+  <body class="" style="font-family: Poppins">
+    <header
+      class="py-2 shadow-md bg-white w-full main-navigation fixed z-[100]">
+      <div class="px-4 lg:px-2 xl:px-28">
+        <nav class="flex justify-between items-center">
+          <div>
+            <img class="w-28" src="assets/images/egsi-logo.png" alt="egsi" />
+          </div>
+          <div
+            class="navigation-links duration-500 absolute md:static bg-white md:min-h-fit min-h-[50vh] top-[-1000%] left-0 w-full flex items-center md:w-auto px-5">
+            <ul
+              class="flex flex-col md:flex-row md:items-center justify-center md:gap-[3vw] gap-8 font-medium w-full">
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="#"
+                  >Home</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="#about"
+                  >About Us</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="#"
+                  >Causes</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="#"
+                  >Gallery</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="#"
+                  >FAQs</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-4">
+            <button
+              class="bg-blue-900 hover:bg-blue-950 hidden md:flex text-white px-4 py-2 rounded-sm">
+              Donate Now
+            </button>
+            <i
+              class="fa fa-bars text-2xl cursor-pointer md:hidden"
+              onclick="onToogleMenu(this)"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('assets/images/banner-3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      class="bg-no-repeat bg-cover bg-center h-[60vh] md:h-screen py-8 px-4 lg:px-2 xl:px-28 flex justify-center items-center">
+      <div>
+        <h2 class="text-white uppercase text-lg text-center">
+          unlocking potential
+        </h2>
+        <h1
+          class="text-white leading-none md:text-5xl py-2 text-3xl text-center font-extrabold">
+          INSPIRING TOMORROW'S LEADERS
+        </h1>
+
+        <div class="flex py-1 gap-1 text-center items-center justify-center">
+          <div
+            class="px-4 py-2 bg-blue-900 text-white cursor-pointer hover:bg-blue-950 duration-300 rounded-sm tracking-wide text-sm font-semibold">
+            DONATE
+          </div>
+          <div
+            class="px-4 py-2 bg-yellow-500 text-white cursor-pointer hover:bg-yellow-600 duration-300 rounded-sm tracking-wide text-sm font-semibold">
+            JOIN US
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="about"
+      class="px-4 lg:px-2 xl:px-28 py-16 flex flex-col lg:flex-row justify-between">
+      <div class="w-full">
+        <h3 class="text-yellow-500 py-2 font-semibold">Who We Are?</h3>
+        <p class="font-semibold text-3xl text-gray-700">
+          About Our Organisation
+        </p>
+      </div>
+      <div class="">
+        <p class="py-4 text-sm text-gray-600">
+          Welcome to Education Growth Success International (EGSI), we are
+          driven by a powerful vision: to create a future where high quality
+          education is accessible to every individual, empowering personal
+          growth, advancing societies, and fostering international success.
+        </p>
+        <p class="text-sm text-gray-600">
+          Our mission is to bridge educational gaps and barriers by providing
+          equal opportunities for learning. We believe that education is the key
+          to unlocking human potential and driving positive change in the world.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-zinc-200 px-4 lg:px-2 xl:px-28 py-10">
+      <div class="text-center">
+        <h3 class="text-yellow-500 py-2 font-semibold">What We Do?</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col p-2 gap-1">
+          <div>
+            <i class="fa fa-bars text-2xl cursor-pointer text-yellow-500"></i>
+          </div>
+          <p class="font-semibold text-base">Empowering Teachers</p>
+          <p class="text-gray-600 text-xs">
+            We provide develpment programs, resources, and training to
+            educators, enabling them to inspire and guide the next generation
+            effectively.
+          </p>
+        </div>
+        <div class="flex flex-col p-2 gap-1">
+          <div>
+            <i class="fa fa-bars text-2xl cursor-pointer text-red-300"></i>
+          </div>
+          <p class="font-semibold text-base">Supporting Students</p>
+          <p class="text-gray-600 text-xs">
+            We offer scholarships and mentorship programs to students,
+            empowering them to pursue their dreams and achive academic
+            excellence.
+          </p>
+        </div>
+        <div class="flex flex-col p-2 gap-1">
+          <div>
+            <i class="fa fa-bars text-2xl cursor-pointer text-blue-500"></i>
+          </div>
+          <p class="font-semibold text-base">Promoting Digital Literacy</p>
+          <p class="text-gray-600 text-xs">
+            We advocate for the integration of technology in education,
+            fostering digital literacy skills that are essential for success in
+            the modern world.
+          </p>
+        </div>
+        <div class="flex flex-col p-2 gap-1">
+          <div>
+            <i class="fa fa-bars text-2xl cursor-pointer text-teal-500"></i>
+          </div>
+          <p class="font-semibold text-base">Community Engagement</p>
+          <p class="text-gray-600 text-xs">
+            We collaborate with local partners, parents, and community members
+            to create a supportive and enriching learning environments for
+            students.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center py-14">
+      <div
+        class="bg-blue-950 px-10 py-14 flex flex-col lg:flex-row gap-4 justify-between w-full md:w-[80%] lg:w-[70%] items-center rounded-sm">
+        <p class="md:text-2xl text-sm text-yellow-500 capitalize font-semibold">
+          lets change the world with kindness
+        </p>
+        <div
+          class="flex flex-row items-center gap-2 cursor-pointer font-medium text-blue-950 bg-yellow-500 px-3 py-2 rounded-sm">
+          <i class="fa fa-bars text-sm cursor-pointer text-blue-900"></i>
+          <p>Become A Volunteer</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const navLinks = document.querySelector(".navigation-links");
+      function onToogleMenu(e) {
+        console.log(e.class);
+        navLinks.classList.toggle("top-[100%]");
+      }
+    </script>
+  </body>
+</html>
