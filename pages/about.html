@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/images/egsi-icon.png" />
+    <title>EGSI - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css" />
+  </head>
+  <body style="font-family: Poppins">
+    <header
+      class="py-2 shadow-md bg-white w-full main-navigation fixed z-[100]">
+      <div class="px-4 lg:px-2 xl:px-28">
+        <nav class="flex justify-between items-center">
+          <div>
+            <img class="w-28" src="../assets/images/egsi-logo.png" alt="egsi" />
+          </div>
+          <div
+            class="navigation-links duration-500 absolute md:static bg-white md:min-h-fit min-h-[50vh] top-[-1000%] left-0 w-full flex items-center md:w-auto px-5">
+            <ul
+              class="flex flex-col md:flex-row md:items-center justify-center md:gap-[3vw] gap-8 font-medium w-full">
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="faqs.html"
+                  >FAQs</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="donate.html">
+              <button
+                class="bg-[#271982] hover:bg-[#788BFF] duration-300 hidden md:flex text-white px-4 py-2 rounded-sm">
+                Donate Now
+              </button>
+            </a>
+            <i
+              class="fa fa-bars text-2xl cursor-pointer md:hidden"
+              onclick="onToogleMenu(this)"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('../assets/images/banner-3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      class="bg-no-repeat bg-cover bg-center h-[60vh] py-8 px-4 lg:px-2 xl:px-28 flex justify-center items-center">
+      <div>
+        <h1
+          class="text-white leading-none md:text-5xl py-2 text-3xl text-center font-extrabold">
+          ABOUT US
+        </h1>
+        <h2 class="text-white text-xs text-center">
+          Our Mission | Our Vision | Our Goals
+        </h2>
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-2 xl:px-28 py-28">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h1 class="text-[#B33951] font-medium text-base uppercase">
+            Who are we
+          </h1>
+          <div class="">
+            <p class="py-4 text-sm text-gray-600">
+              Welcome to Education Growth Success International (EGSI), we are
+              driven by a powerful vision: to create a future where high quality
+              education is accessible to every individual, empowering personal
+              growth, advancing societies, and fostering international success.
+            </p>
+            <p class="text-sm pb-4 text-gray-600">
+              Our mission is to bridge educational gaps and barriers by
+              providing equal opportunities for learning. We believe that
+              education is the key to unlocking human potential and driving
+              positive change in the world.
+            </p>
+            <p class="text-sm text-gray-600">
+              With your support, we can continue making a meaningful impact in
+              the lives of countless individuals, breaking the cycle of poverty,
+              and building a world where education knows no boundaries.
+              Together, let's empower minds, transform lives, and shape a future
+              where every person thrives through the power of education. Make a
+              difference today by donating, volunteering, or spreading the word
+              about our cause.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <h1 class="text-[#B33951] font-medium text-base uppercase">
+            Our approach to education
+          </h1>
+          <p class="py-4 text-sm text-gray-600">
+            At EGSI, we believe in a holistic approach to education. We focus
+            not only on academic excellence but also on fostering essential life
+            skills and values that prepare individuals for a successful and
+            fulfilling life. Our approach includes:
+          </p>
+          <div class="grid grid-rows-4 gap-1">
+            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+              <div class="flex items-center">
+                <span class="h-8 w-8 flex items-center justify-center bg-[#271982] text-white rounded-full"
+                  ><p class="">1</p></span
+                >
+              </div>
+              <div class="text-xs">
+                <p>
+                  Quality Education: We strive to provide education of the
+                  highest standard, with well-designed curricula and skilled
+                  educators who nurture the intellectual curiosity of students.
+                </p>
+              </div>
+            </div>
+            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+              <div class="flex items-center">
+                <span class="h-8 w-8 flex items-center justify-center bg-[#788BFF] text-white rounded-full"
+                  ><p class="">2</p></span
+                >
+              </div>
+              <div class="text-xs">
+                <p>
+                  Quality Education: We strive to provide education of the
+                  highest standard, with well-designed curricula and skilled
+                  educators who nurture the intellectual curiosity of students.
+                </p>
+              </div>
+            </div>
+            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+              <div class="flex items-center">
+                <span class="h-8 w-8 flex items-center justify-center bg-[#EECF6D] text-white rounded-full"
+                  ><p class="">3</p></span
+                >
+              </div>
+              <div class="text-xs">
+                <p>
+                  Quality Education: We strive to provide education of the
+                  highest standard, with well-designed curricula and skilled
+                  educators who nurture the intellectual curiosity of students.
+                </p>
+              </div>
+            </div>
+            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+              <div class="flex items-center">
+                <span class="h-8 w-8 flex items-center justify-center bg-[#549F93] text-white rounded-full"
+                  ><p class="">4</p></span
+                >
+              </div>
+              <div class="text-xs">
+                <p>
+                  Quality Education: We strive to provide education of the
+                  highest standard, with well-designed curricula and skilled
+                  educators who nurture the intellectual curiosity of students.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const navLinks = document.querySelector(".navigation-links");
+
+      function onToogleMenu(e) {
+        console.log(e.class);
+        navLinks.classList.toggle("top-[100%]");
+      }
+
+      function toogleModal() {
+        const blur = document.querySelector(".blur");
+        const modal = document.querySelector(".modal");
+        blur.classList.toggle("active");
+        modal.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

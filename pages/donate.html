@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/images/egsi-icon.png" />
+    <title>EGSI - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+  </head>
+<body style="font-family: Poppins">
+    <header
+      class="py-2 shadow-md bg-white w-full main-navigation fixed z-[100]">
+      <div class="px-4 lg:px-2 xl:px-28">
+        <nav class="flex justify-between items-center">
+          <div>
+            <img class="w-28" src="../assets/images/egsi-logo.png" alt="egsi" />
+          </div>
+          <div
+            class="navigation-links duration-500 absolute md:static bg-white md:min-h-fit min-h-[50vh] top-[-1000%] left-0 w-full flex items-center md:w-auto px-5">
+            <ul
+              class="flex flex-col md:flex-row md:items-center justify-center md:gap-[3vw] gap-8 font-medium w-full">
+              <li onclick="onToogleMenu(this)">
+                <a class="hover:text-blue-900 hover:no-underline" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="faqs.html"
+                  >FAQs</a
+                >
+              </li>
+              <li onclick="onToogleMenu(this)">
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="donate.html">
+              <button
+                class="bg-[#271982] hover:bg-[#788BFF] duration-300 hidden md:flex text-white px-4 py-2 rounded-sm">
+                Donate Now
+              </button>
+            </a>
+            <i
+              class="fa fa-bars text-2xl cursor-pointer md:hidden"
+              onclick="onToogleMenu(this)"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+</body>
+</html>
