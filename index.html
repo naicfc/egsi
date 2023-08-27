@@ -34,41 +34,49 @@
                 >
               </li>
               <li onclick="onToogleMenu(this)">
-                <a class="hover:text-blue-900 hover:no-underline" href="#about"
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="pages/about.html"
                   >About Us</a
                 >
               </li>
               <li onclick="onToogleMenu(this)">
                 <a
                   class="hover:text-blue-900 hover:no-underline"
-                  href="#projects"
+                  href="pages/projects.html"
                   >Projects</a
                 >
               </li>
               <li onclick="onToogleMenu(this)">
                 <a
                   class="hover:text-blue-900 hover:no-underline"
-                  href="#gallery"
+                  href="pages/gallery.html"
                   >Gallery</a
                 >
               </li>
               <li onclick="onToogleMenu(this)">
-                <a class="hover:text-blue-900 hover:no-underline" href="#faqs"
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="pages/faqs.html"
                   >FAQs</a
                 >
               </li>
               <li onclick="onToogleMenu(this)">
-                <a class="hover:text-blue-900 hover:no-underline" href="#footer"
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="pages/contact.html"
                   >Contact Us</a
                 >
               </li>
             </ul>
           </div>
           <div class="flex items-center gap-4">
-            <button
-              class="bg-blue-900 hover:bg-blue-950 hidden md:flex text-white px-4 py-2 rounded-sm">
-              Donate Now
-            </button>
+            <a href="pages/donate.html">
+              <button
+                class="bg-[#271982] hover:bg-[#788BFF] duration-300 hidden md:flex text-white px-4 py-2 rounded-sm">
+                Donate Now
+              </button>
+            </a>
             <i
               class="fa fa-bars text-2xl cursor-pointer md:hidden"
               onclick="onToogleMenu(this)"></i>
@@ -96,13 +104,15 @@
         </h1>
 
         <div class="flex py-1 gap-1 text-center items-center justify-center">
-          <div
-            class="px-6 py-2 bg-blue-900 text-white cursor-pointer hover:bg-blue-950 duration-300 rounded-sm tracking-wide text-sm font-semibold">
-            DONATE
-          </div>
-          <a href="#footer"
+          <a href="pages/donate.html"
             ><div
-              class="px-6 py-2 bg-yellow-500 text-white cursor-pointer hover:bg-yellow-600 duration-300 rounded-sm tracking-wide text-sm font-semibold">
+              class="px-6 py-2 bg-[#271982] border-[#271982] border-2 text-white cursor-pointer hover:bg-[#788BFF] hover:border-[#788BFF] duration-300 rounded-sm tracking-wide text-sm font-semibold">
+              DONATE
+            </div></a
+          >
+          <a href="pages/contact.html"
+            ><div
+              class="px-6 py-2 border-white border-2 text-white hover:text-gray-700 cursor-pointer hover:bg-[#EECF6D] hover:border-[#EECF6D] duration-300 rounded-sm tracking-wide text-sm font-semibold">
               JOIN US
             </div></a
           >
@@ -114,7 +124,7 @@
       id="about"
       class="px-4 lg:px-2 xl:px-28 py-16 flex flex-col lg:flex-row justify-between">
       <div class="w-full">
-        <h3 class="text-yellow-500 py-2 font-semibold">Who We Are?</h3>
+        <h3 class="text-[#EECF6D] py-2 font-semibold">Who We Are?</h3>
         <p class="font-semibold text-3xl text-gray-700">
           About Our Organisation
         </p>
@@ -136,7 +146,7 @@
 
     <div class="bg-zinc-200 px-4 lg:px-2 xl:px-28 py-10">
       <div class="text-center">
-        <h3 class="text-yellow-500 py-2 font-semibold">What We Do?</h3>
+        <h3 class="text-[#EECF6D] py-2 font-semibold">What We Do?</h3>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div class="flex flex-col p-2 gap-1">
@@ -189,9 +199,25 @@
       </div>
     </div>
 
+    <div class="flex items-center justify-center py-14">
+      <div
+        class="bg-[#271982] px-10 py-14 flex flex-col lg:flex-row gap-4 justify-between w-full md:w-[80%] lg:w-[70%] items-center rounded-sm">
+        <p class="md:text-2xl text-sm text-[#EECF6D] capitalize font-semibold">
+          lets change the world with kindness
+        </p>
+        <a href="#footer"
+          ><div
+            class="flex flex-row items-center gap-2 cursor-pointer font-medium text-blue-950 bg-[#EECF6D] px-3 py-2 rounded-sm">
+            <i class="fas fa-user text-sm cursor-pointer text-blue-900"></i>
+            <p>Become A Volunteer</p>
+          </div></a
+        >
+      </div>
+    </div>
+
     <div id="projects" class="px-4 lg:px-2 xl:px-28 py-20">
       <div class="text-center">
-        <h3 class="text-yellow-500 font-semibold py-1">Latest Projects</h3>
+        <h3 class="text-[#EECF6D] font-semibold py-1">Latest Projects</h3>
         <p class="text-sm text-gray-600">
           At EGSI, there are various charity causes and projects in which you
           can always take part.
@@ -280,25 +306,9 @@
       </div>
     </div>
 
-    <div class="flex items-center justify-center py-14">
-      <div
-        class="bg-blue-950 px-10 py-14 flex flex-col lg:flex-row gap-4 justify-between w-full md:w-[80%] lg:w-[70%] items-center rounded-sm">
-        <p class="md:text-2xl text-sm text-yellow-500 capitalize font-semibold">
-          lets change the world with kindness
-        </p>
-        <a href="#footer"
-          ><div
-            class="flex flex-row items-center gap-2 cursor-pointer font-medium text-blue-950 bg-yellow-500 px-3 py-2 rounded-sm">
-            <i class="fas fa-user text-sm cursor-pointer text-blue-900"></i>
-            <p>Become A Volunteer</p>
-          </div></a
-        >
-      </div>
-    </div>
-
     <div id="gallery" class="px-4 lg:px-2 xl:px-28 py-20">
       <div class="text-center">
-        <p class="text-yellow-500 font-semibold">Gallery</p>
+        <p class="text-[#EECF6D] font-semibold">Gallery</p>
         <p class="text-gray-600 text-center mb-8">
           Here are some images from our most recent events.
         </p>
@@ -308,11 +318,11 @@
         <div class="shuffle-item">
           <div class="project-img-container">
             <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
+              <image src="assets/images/banner-3.jpg" alt="" />
             </a>
             <div class="project-item-info">
               <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
+                <h2 class="uppercase text-sm text-white font-bold">17 Jan, 2023</h2>
                 <a>
                   <p class="project-cat cursor-pointer text-xs">
                     Donation of 200 books to abc school
@@ -330,7 +340,7 @@
             </a>
             <div class="project-item-info">
               <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
+                <h2 class="uppercase text-sm text-white font-bold">17 Jan, 2023</h2>
                 <a>
                   <p class="project-cat cursor-pointer text-xs">
                     Donation of 200 books to abc school
@@ -344,11 +354,11 @@
         <div class="shuffle-item">
           <div class="project-img-container">
             <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
+              <image src="assets/images/banner-3.jpg" alt="" />
             </a>
             <div class="project-item-info">
               <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
+                <h2 class="uppercase text-sm text-white font-bold">17 Jan, 2023</h2>
                 <a>
                   <p class="project-cat cursor-pointer text-xs">
                     Donation of 200 books to abc school
@@ -362,83 +372,11 @@
         <div class="shuffle-item">
           <div class="project-img-container">
             <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
+              <image src="assets/images/banner.jpg" alt=""/>
             </a>
             <div class="project-item-info">
               <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
-                <a>
-                  <p class="project-cat cursor-pointer text-xs">
-                    Donation of 200 books to abc school
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="shuffle-item">
-          <div class="project-img-container">
-            <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
-            </a>
-            <div class="project-item-info">
-              <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
-                <a>
-                  <p class="project-cat cursor-pointer text-xs">
-                    Donation of 200 books to abc school
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="shuffle-item">
-          <div class="project-img-container">
-            <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
-            </a>
-            <div class="project-item-info">
-              <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
-                <a>
-                  <p class="project-cat cursor-pointer text-xs">
-                    Donation of 200 books to abc school
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="shuffle-item">
-          <div class="project-img-container">
-            <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
-            </a>
-            <div class="project-item-info">
-              <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
-                <a>
-                  <p class="project-cat cursor-pointer text-xs">
-                    Donation of 200 books to abc school
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="shuffle-item">
-          <div class="project-img-container">
-            <a class="gallery-popup" href="">
-              <image src="assets/images/banner.jpg" alt="" />
-            </a>
-            <div class="project-item-info">
-              <div class="project-item-info-content">
-                <h2 class="uppercase text-sm text-white">17 Jan, 2023</h2>
+                <h2 class="uppercase text-sm text-white font-bold">17 Jan, 2023</h2>
                 <a>
                   <p class="project-cat cursor-pointer text-xs">
                     Donation of 200 books to abc school
@@ -451,35 +389,101 @@
       </div>
     </div>
 
-    <div
-      style="
-        background: linear-gradient(
-            rgba(0, 150, 136, 0.9),
-            rgba(22, 13, 54, 0.9)
-          ),
-          url('assets/images/banner-3.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      ">
-      <div class="padding py-8">
+    <div class="px-4 lg:px-2 xl:px-28 py-16">
+      <div class="text-center">
+        <p class="text-[#EECF6D] font-semibold">Testimonials</p>
+        <p class="text-gray-600 text-center mb-8">What people say about us.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
         <div
-          class="grid grid-cols-2 md:grid-cols-4 text-center text-white gap-4">
-          <div>
-            <p class="text-3xl font-semibold">600+</p>
-            <p class="text-sm">Donations</p>
+          class="flex flex-col gap-4 p-4 border-b-4 border-[#549F93] bg-zinc-100">
+          <div class="flex items-center gap-4">
+            <div class="text-3xl font-extrabold">SW</div>
+            <div class="flex flex-col">
+              <p class="text-xs font-semibold">Sarah Wilson</p>
+              <p class="text-xs">Beneficiary, ABC Basic School</p>
+            </div>
           </div>
           <div>
-            <p class="text-3xl font-semibold">80+</p>
-            <p class="text-sm">Funds Raised</p>
+            <p class="text-sm">
+              "Thanks to EGSI, I was able to pursue my dream of higher
+              education. The scholarship I received not only eased my financial
+              burden but also inspired me to excel academically. I am now on
+              track to achieving my goals and giving back to society."
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 p-4 border-b-4 border-[#549F93] bg-zinc-100">
+          <div class="flex items-center gap-4">
+            <div class="text-3xl font-extrabold">DT</div>
+            <div class="flex flex-col">
+              <p class="text-xs font-semibold">David Tetteh</p>
+              <p class="text-xs">Teacher, Abc Basic School</p>
+            </div>
           </div>
           <div>
-            <p class="text-3xl font-semibold">20+</p>
-            <p class="text-sm">Volunteers</p>
+            <p class="text-sm">
+              "The educational workshops organized by EGSI have been a
+              game-changer for my classroom. The engaging content and innovative
+              teaching methods have revitalized my students' learning
+              experiences, making education a joy for both educators and
+              learners."
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 p-4 border-b-4 border-[#549F93] bg-zinc-100">
+          <div class="flex items-center gap-4">
+            <div class="text-3xl font-extrabold">ML</div>
+            <div class="flex flex-col">
+              <p class="text-xs font-semibold">Maya Laryea</p>
+              <p class="text-xs">Volunteer, EGSI</p>
+            </div>
           </div>
           <div>
-            <p class="text-3xl font-semibold">60+</p>
-            <p class="text-sm">Projects</p>
+            <p class="text-sm">
+              "As a volunteer with [Your Charity Name], I've witnessed firsthand
+              the transformative power of education. Being part of a movement
+              that empowers individuals from all walks of life is a truly
+              rewarding experience. Together, we are shaping a brighter future."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-2 xl:px-28 py-16">
+      <div
+        style="
+          background: linear-gradient(
+              rgba(0, 150, 136, 0.9),
+              rgba(22, 13, 54, 0.9)
+            ),
+            url('assets/images/banner-3.jpg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        ">
+        <div class="padding py-8">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 text-center text-white gap-4">
+            <div>
+              <p class="text-3xl font-semibold">60+</p>
+              <p class="text-sm">Donations</p>
+            </div>
+            <div>
+              <p class="text-3xl font-semibold">20+</p>
+              <p class="text-sm">Funds Raised</p>
+            </div>
+            <div>
+              <p class="text-3xl font-semibold">30+</p>
+              <p class="text-sm">Volunteers</p>
+            </div>
+            <div>
+              <p class="text-3xl font-semibold">40+</p>
+              <p class="text-sm">Projects</p>
+            </div>
           </div>
         </div>
       </div>
@@ -487,7 +491,7 @@
 
     <div id="faqs" class="px-4 lg:px-2 xl:px-28 py-16">
       <div class="text-center">
-        <h3 class="text-yellow-500 py-6 font-semibold">
+        <h3 class="text-[#EECF6D] py-6 font-semibold">
           Frequently Asked Questions
         </h3>
       </div>
@@ -499,7 +503,9 @@
             </div>
           </div>
           <div class="flex flex-col gap-2">
-            <h3 class="font-semibold text-base">Ask some random question?</h3>
+            <h3 class="font-semibold text-base">
+              Who can benefit from the programs and initiatives offered by EGSI?
+            </h3>
             <p class="text-sm text-gray-600">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatibus explicabo quis, necessitatibus voluptatum autem
@@ -515,7 +521,9 @@
             </div>
           </div>
           <div class="flex flex-col gap-2">
-            <h3 class="font-semibold text-base">Ask some random question?</h3>
+            <h3 class="font-semibold text-base">
+              How can I get involved and support EGSI's mission?
+            </h3>
             <p class="text-sm text-gray-600">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatibus explicabo quis, necessitatibus voluptatum autem
@@ -531,7 +539,9 @@
             </div>
           </div>
           <div class="flex flex-col gap-2">
-            <h3 class="font-semibold text-base">Ask some random question?</h3>
+            <h3 class="font-semibold text-base">
+              Does EGSI focus on specific regions for its initiative?
+            </h3>
             <p class="text-sm text-gray-600">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatibus explicabo quis, necessitatibus voluptatum autem
