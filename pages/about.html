@@ -26,7 +26,7 @@
           <div
             class="navigation-links duration-500 absolute md:static bg-white md:min-h-fit min-h-[50vh] top-[-1000%] left-0 w-full flex items-center md:w-auto px-5">
             <ul
-              class="flex flex-col md:flex-row md:items-center justify-center md:gap-[3vw] gap-8 font-medium w-full">
+              class="flex flex-col md:flex-row md:items-center justify-center md:gap-[3vw] text-sm gap-8 font-medium w-full">
               <li onclick="onToogleMenu(this)">
                 <a
                   class="hover:text-blue-900 hover:no-underline"
@@ -107,12 +107,12 @@
     </div>
 
     <div class="px-4 lg:px-2 xl:px-28 py-28">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
-          <h1 class="text-[#B33951] font-medium text-base uppercase">
+      <div class="">
+        <div class="">
+          <h1 class="text-[#EECF6D] font-medium text-base uppercase text-center">
             Who are we
           </h1>
-          <div class="">
+          <div class="w-full md:w-[80%] m-auto">
             <p class="py-4 text-sm text-gray-600">
               Welcome to Education Growth Success International (EGSI), we are
               driven by a powerful vision: to create a future where high quality
@@ -136,8 +136,56 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-2 xl:px-28 py-10">
+      <div class="px-10">
+        <h1
+          class="text-[#EECF6D] text-center py-8 font-medium text-base uppercase">
+          What we do
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-white">
+          <div class="bg-[#271982] p-5">
+            <p class="text-sm font-semibold py-2">
+              Establishing Educational Facilities
+            </p>
+            <p class="text-xs">
+              We build and support schools, libraries, and educational centers
+              in underserved areas, ensuring access to quality education.
+            </p>
+          </div>
+          <div class="bg-[#788BFF] p-5">
+            <p class="text-sm font-semibold py-2">Empowering Teachers</p>
+            <p class="text-xs">
+              We provide professional development programs, resources, and
+              training to educators, enabling them to inspire and guide the next
+              generation effectively.
+            </p>
+          </div>
+          <div class="bg-[#EECF6D] p-5">
+            <p class="text-sm font-semibold py-2">Supporting Students</p>
+            <p class="text-xs">
+              We offer scholarships, educational grants, and mentorship programs
+              to bright young minds, empowering them to pursue their dreams and
+              achieve academic excellence.
+            </p>
+          </div>
+          <div class="bg-[#549F93] p-5">
+            <p class="text-sm font-semibold py-2">Promoting Digital Literacy</p>
+            <p class="text-xs">
+              We advocate for the integration of technology in education,
+              fostering digital literacy skills that are essential for success
+              in the modern world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-2 xl:px-28 py-10">
         <div class="">
-          <h1 class="text-[#B33951] font-medium text-base uppercase">
+          <h1 class="text-[#EECF6D] font-medium text-base uppercase">
             Our approach to education
           </h1>
           <p class="py-4 text-sm text-gray-600">
@@ -146,67 +194,248 @@
             skills and values that prepare individuals for a successful and
             fulfilling life. Our approach includes:
           </p>
-          <div class="grid grid-rows-4 gap-1">
-            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+          <div class="grid grid-rows-4 gap-2">
+            <div class="p-2 bg-zinc-100 text-sm flex items-center gap-2">
               <div class="flex items-center">
-                <span class="h-8 w-8 flex items-center justify-center bg-[#271982] text-white rounded-full"
+                <span
+                  class="h-8 w-8 flex items-center justify-center bg-[#271982] text-white rounded-full"
                   ><p class="">1</p></span
                 >
               </div>
-              <div class="text-xs">
+              <div class="text-sm">
                 <p>
-                  Quality Education: We strive to provide education of the
-                  highest standard, with well-designed curricula and skilled
-                  educators who nurture the intellectual curiosity of students.
+                  <span class="font-medium">Quality Education:</span> We strive
+                  to provide education of the highest standard, with
+                  well-designed curricula and skilled educators who nurture the
+                  intellectual curiosity of students.
                 </p>
               </div>
             </div>
-            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+            <div class="p-2 bg-zinc-100 text-sm flex items-center gap-2">
               <div class="flex items-center">
-                <span class="h-8 w-8 flex items-center justify-center bg-[#788BFF] text-white rounded-full"
+                <span
+                  class="h-8 w-8 flex items-center justify-center bg-[#788BFF] text-white rounded-full"
                   ><p class="">2</p></span
                 >
               </div>
-              <div class="text-xs">
+              <div class="text-sm">
                 <p>
-                  Quality Education: We strive to provide education of the
-                  highest standard, with well-designed curricula and skilled
-                  educators who nurture the intellectual curiosity of students.
+                  <span class="font-medium">Character Development:</span> Beyond
+                  academics, we instill values such as empathy, compassion,
+                  resilience, and teamwork, empowering students to become
+                  responsible global citizens.
                 </p>
               </div>
             </div>
-            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+            <div class="p-2 bg-zinc-100 text-sm flex items-center gap-2">
               <div class="flex items-center">
-                <span class="h-8 w-8 flex items-center justify-center bg-[#EECF6D] text-white rounded-full"
+                <span
+                  class="h-8 w-8 flex items-center justify-center bg-[#EECF6D] text-white rounded-full"
                   ><p class="">3</p></span
                 >
               </div>
-              <div class="text-xs">
+              <div class="text-sm">
                 <p>
-                  Quality Education: We strive to provide education of the
-                  highest standard, with well-designed curricula and skilled
-                  educators who nurture the intellectual curiosity of students.
+                  <span class="font-medium">Inclusivity:</span> We are committed
+                  to inclusivity and diversity, ensuring that education is
+                  accessible to individuals from all walks of life, regardless
+                  of their background or circumstances.
                 </p>
               </div>
             </div>
-            <div class="p-2 bg-zinc-100 text-sm flex gap-2">
+            <div class="p-2 bg-zinc-100 text-sm flex items-center gap-2">
               <div class="flex items-center">
-                <span class="h-8 w-8 flex items-center justify-center bg-[#549F93] text-white rounded-full"
+                <span
+                  class="h-8 w-8 flex items-center justify-center bg-[#549F93] text-white rounded-full"
                   ><p class="">4</p></span
                 >
               </div>
-              <div class="text-xs">
+              <div class="text-sm">
                 <p>
-                  Quality Education: We strive to provide education of the
-                  highest standard, with well-designed curricula and skilled
-                  educators who nurture the intellectual curiosity of students.
+                  <span class="font-medium">Innovation:</span> Embracing modern
+                  teaching methodologies and technology, we create dynamic and
+                  engaging learning environments that cater to the diverse needs
+                  of our students.
                 </p>
               </div>
             </div>
           </div>
         </div>
+    </div>
+
+    <div class="px-4 lg:px-2 xl:px-28 py-10 bg-zinc-100">
+      <div class="px-10">
+        <div class="text-center py-4">
+          <h3 class="text-[#EECF6D] font-semibold py-1 uppercase">Get Involved</h3>
+          <p class="text-sm text-gray-600">
+            You can contribute to our mission in several ways
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="px-3 py-8 bg-white text-center flex flex-col gap-2 shadow-sm shadow-gray-300">
+            <div>
+              <i
+                class="fas fa-user text-2xl cursor-pointer text-grey-700"></i>
+            </div>
+            <p class="text-sm font-semibold uppercase text-gray-700">
+              Volunteer
+            </p>
+            <p class="text-sm text-gray-600">
+              Join our team of passionate volunteers and help us create lasting
+              change on the ground. Your time and expertise can inspire and
+              motivate the next generation.
+            </p>
+          </div>
+          <div
+            class="px-3 py-8 bg-[#B33951] text-center text-white flex flex-col gap-2 shadow-sm shadow-gray-300">
+            <div>
+              <i
+                class="fas fa-dollar-sign text-2xl cursor-pointer text-white"></i>
+            </div>
+            <p class="text-sm font-semibold uppercase">Donate</p>
+            <p class="text-sm">
+              Every contribution, big or small, makes a significant difference
+              in the lives of those we serve. Your donation helps us build more
+              schools, provide scholarships, and invest in innovative
+              educational programs.
+            </p>
+          </div>
+          <div
+            class="px-3 py-8 bg-white text-center flex flex-col gap-2 shadow-sm shadow-gray-300">
+            <div>
+              <i
+                class="far fa-paper-plane text-2xl cursor-pointer text-grey-700"></i>
+            </div>
+            <p class="text-sm font-semibold uppercase text-gray-700">
+              Spread the Word
+            </p>
+            <p class="text-sm text-gray-600">
+              Help us raise awareness about the importance of education by
+              sharing our stories, initiatives, and achievements on social media
+              and beyond.
+            </p>
+          </div>
+          <div
+            class="px-3 py-8 bg-white text-center flex flex-col gap-2 shadow-sm shadow-gray-300">
+            <div>
+              <i
+                class="far fa-building text-2xl cursor-pointer text-grey-700"></i>
+            </div>
+            <p class="text-sm font-semibold uppercase text-gray-700">
+              Corporate Partnerships
+            </p>
+            <p class="text-sm text-gray-600">
+              Are you a business looking to make a positive impact on society?
+              Partner with us and together, we can invest in the future
+              workforce, promoting a skilled and educated global community.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="px-4 lg:px-2 xl:px-28 py-16">
+      <div class="text-center">
+        <p class="text-[#EECF6D] font-semibold">Testimonials</p>
+        <p class="text-gray-600 text-center mb-8">What people say about us.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-4">
+        <div
+          class="flex flex-col gap-4 p-4 border-b-4 border-[#549F93] bg-zinc-100">
+          <div class="flex items-center gap-4">
+            <div class="text-3xl font-extrabold">SW</div>
+            <div class="flex flex-col">
+              <p class="text-xs font-semibold">Sarah Wilson</p>
+              <p class="text-xs">Beneficiary, ABC Basic School</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm">
+              "Thanks to EGSI, I was able to pursue my dream of higher
+              education. The scholarship I received not only eased my financial
+              burden but also inspired me to excel academically. I am now on
+              track to achieving my goals and giving back to society."
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 p-4 border-b-4 border-[#549F93] bg-zinc-100">
+          <div class="flex items-center gap-4">
+            <div class="text-3xl font-extrabold">DT</div>
+            <div class="flex flex-col">
+              <p class="text-xs font-semibold">David Tetteh</p>
+              <p class="text-xs">Teacher, Abc Basic School</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm">
+              "The educational workshops organized by EGSI have been a
+              game-changer for my classroom. The engaging content and innovative
+              teaching methods have revitalized my students' learning
+              experiences, making education a joy for both educators and
+              learners."
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 p-4 border-b-4 border-[#549F93] bg-zinc-100">
+          <div class="flex items-center gap-4">
+            <div class="text-3xl font-extrabold">ML</div>
+            <div class="flex flex-col">
+              <p class="text-xs font-semibold">Maya Laryea</p>
+              <p class="text-xs">Volunteer, EGSI</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm">
+              "As a volunteer with [Your Charity Name], I've witnessed firsthand
+              the transformative power of education. Being part of a movement
+              that empowers individuals from all walks of life is a truly
+              rewarding experience. Together, we are shaping a brighter future."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="flex flex-col px-4 lg:px-2 xl:px-28 pt-8 bg-zinc-100">
+        <div
+          class="py-6 flex flex-col gap-2 md:flex-row items-center justify-between border-b border-gray-500">
+          <img src="../assets/images/egsi-logo.png" class="w-24" alt="egsi" />
+          <div class="flex gap-3 items-center">
+            <div
+              class="flex gap-1 items-center border-r-2 border-gray-500 px-2">
+              <i
+                class="fas fa-map-marker-alt text-sm cursor-pointer text-gray-700"></i>
+              <p>Accra, Ghana</p>
+            </div>
+            <div class="flex gap-1 items-center">
+              <i class="fas fa-phone text-sm cursor-pointer text-gray-700"></i>
+              <p>+233 000 0000</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center">
+            <div>
+              <i
+                class="fab fa-twitter text-xl cursor-pointer text-gray-700"></i>
+            </div>
+            <div>
+              <i
+                class="fab fa-youtube text-xl cursor-pointer text-gray-700"></i>
+            </div>
+            <div>
+              <i
+                class="fab fa-instagram text-xl cursor-pointer text-gray-700"></i>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 text-center text-gray-600">
+          &copy 2023 EGS International, All rights reserved
+        </div>
+      </div>
+    </footer>
 
     <script>
       const navLinks = document.querySelector(".navigation-links");
