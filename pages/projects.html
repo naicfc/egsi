@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -13,9 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet" />
 
-    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css" />
   </head>
-<body style="font-family: Poppins">
+  <body style="font-family: Poppins">
     <header
       class="py-2 shadow-md bg-white w-full main-navigation fixed z-[100]">
       <div class="px-4 lg:px-2 xl:px-28">
@@ -26,9 +26,11 @@
           <div
             class="navigation-links duration-500 absolute md:static bg-white md:min-h-fit min-h-[50vh] top-[-1000%] left-0 w-full flex items-center md:w-auto px-5">
             <ul
-              class="flex flex-col md:flex-row md:items-center justify-center md:gap-[3vw] gap-8 font-medium w-full">
+              class="flex flex-col md:flex-row md:items-center justify-center text-sm md:gap-[3vw] gap-8 font-medium w-full">
               <li onclick="onToogleMenu(this)">
-                <a class="hover:text-blue-900 hover:no-underline" href="../index.html"
+                <a
+                  class="hover:text-blue-900 hover:no-underline"
+                  href="../index.html"
                   >Home</a
                 >
               </li>
@@ -83,5 +85,340 @@
         </nav>
       </div>
     </header>
-</body>
+
+    <div
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('../assets/images/banner-3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      class="bg-no-repeat bg-cover bg-center h-[60vh] py-8 px-4 lg:px-2 xl:px-28 flex justify-center items-center">
+      <div>
+        <h1
+          class="text-white uppercase leading-none md:text-5xl py-2 text-3xl text-center font-extrabold">
+          Our Projects
+        </h1>
+        <h2 class="text-white text-xs text-center">
+          Recent | On-Going | Upcoming
+        </h2>
+      </div>
+    </div>
+
+    <div id="projects" class="px-4 lg:px-2 xl:px-28 py-20">
+      <div class="text-center">
+        <h3 class="text-[#EECF6D] font-semibold py-1">Latest Projects</h3>
+        <p class="text-sm text-gray-600">
+          At EGSI, there are various charity causes and projects in which you
+          can always take part.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-5 py-8 sm:px-1 lg:px-20 gap-8">
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Community Libraries Project
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Establish community libraries as centers of learning, providing
+                access to books, resources, and educational activities for
+                children and adults.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner-4.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Girls' Education Empowerment
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Help break down gender barriers by providing scholarships,
+                mentorship programs, and safe learning environments for girls,
+                ensuring they have the same access to education as boys.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner-3.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Digital Literacy Initiatives
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Bridge the digital divide by launching programs that teach
+                essential digital skills to individuals who lack access to
+                technology and online resources.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="px-4 lg:px-2 xl:px-28 py-20">
+      <div class="text-center">
+        <h3 class="text-[#B33951] font-semibold py-1 uppercase">
+          On-Going Projects
+        </h3>
+        <p class="text-sm text-gray-600">
+          At EGSI, there are various charity causes and projects in which you
+          can always take part.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-5 py-8 sm:px-1 lg:px-20 gap-8">
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Scholarships for Higher Education
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Offer scholarships to motivated and talented students who are
+                determined to pursue higher education but lack the financial
+                means to do so.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner-4.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Special Needs Education
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Create inclusive learning environments for children with special
+                needs, providing tailored education and support to help them
+                thrive.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner-3.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Arts and Creative Expression
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Encourage creativity and self-expression among children through
+                art, music, and cultural programs that enhance their holistic
+                development.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="px-4 lg:px-2 xl:px-28 py-20">
+      <div class="text-center">
+        <h3 class="text-[#549F93] font-semibold py-1 uppercase">
+          Upcoming Projects
+        </h3>
+        <p class="text-sm text-gray-600">
+          At EGSI, there are various charity causes and projects in which you
+          can always take part.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-5 py-8 sm:px-1 lg:px-20 gap-8">
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Rural School Development
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Support the establishment and improvement of schools in remote
+                and underserved areas, ensuring that quality education reaches
+                every corner of the community.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner-4.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Teacher Training and Development
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Enhance the quality of education by offering training programs
+                and resources to teachers, empowering them to deliver engaging
+                and effective lessons.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-sm shadow-sm shadow-gray-300">
+          <img
+            src="../assets/images/banner-3.jpg"
+            alt="causes"
+            class="h-[30vh] w-[100%]" />
+          <div class="p-4">
+            <p class="text-gray-600 text-lg font-medium">
+              Adult Literacy Campaign
+            </p>
+            <div class="py-2">
+              <p class="text-sm text-gray-500">
+                Launch literacy programs for adults, enabling them to develop
+                reading, writing, and numeracy skills that open up new
+                opportunities.
+              </p>
+            </div>
+            <div class="py-2">
+              <div
+                class="py-2 rounded-full w-1/2 text-sm cursor-pointer text-center flex items-center gap-1 text-gray-500">
+                Learn more
+                <i
+                  class="fas fa-arrow-right text-sm cursor-pointer text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="flex flex-col px-4 lg:px-2 xl:px-28 pt-8 bg-zinc-100">
+        <div
+          class="py-6 flex flex-col gap-2 md:flex-row items-center justify-between border-b border-gray-500">
+          <img src="../assets/images/egsi-logo.png" class="w-24" alt="egsi" />
+          <div class="flex gap-3 items-center">
+            <div
+              class="flex gap-1 items-center border-r-2 border-gray-500 px-2">
+              <i
+                class="fas fa-map-marker-alt text-sm cursor-pointer text-gray-700"></i>
+              <p>Accra, Ghana</p>
+            </div>
+            <div class="flex gap-1 items-center">
+              <i class="fas fa-phone text-sm cursor-pointer text-gray-700"></i>
+              <p>+233 000 0000</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-center">
+            <div>
+              <i
+                class="fab fa-twitter text-xl cursor-pointer text-gray-700"></i>
+            </div>
+            <div>
+              <i
+                class="fab fa-youtube text-xl cursor-pointer text-gray-700"></i>
+            </div>
+            <div>
+              <i
+                class="fab fa-instagram text-xl cursor-pointer text-gray-700"></i>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 text-center text-gray-600">
+          &copy 2023 EGS International, All rights reserved
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
